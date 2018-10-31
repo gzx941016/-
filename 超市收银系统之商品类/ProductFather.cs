@@ -14,21 +14,24 @@ namespace 超市收银系统之商品类
             get;
             set;
         }
+        public string Name
+        {
+            get;
+            set;
+        }
         public string ID
         {
             get;
             set;
         }
-        public double Count
-        {
-            get;
-            set;
-        }
-public ProductFather(string id,double price,double count)
+       
+       
+public ProductFather(string id,double price,string name)
         {
             this.ID = id;
             this.Price = price;
-            this.Count = count;
+            this.Name = name;
+           
         }
 
 

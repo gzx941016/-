@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace 超市收银系统之商品类
 {
     class TanZao:ProductFather
-    {public TanZao(string id,double price,double count) : base(id, price, count)
+    {public TanZao(string id,double price,string name) : base(id, price, name)
         {
 
         }

@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace 超市收银系统之商品类
-{
-    class YanTaiApple:ProductFather
+{/// <summary>
+/// 不打折，该多少就多少
+/// </summary>
+    class CalNomal:CalFather
     {
-        public YanTaiApple(string id,double price,string name) : base(id, price, name)
+        public override double GetTotalMoney(double RealMoney)
         {
-
+            return RealMoney;
         }
     }
 }

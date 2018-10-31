@@ -8,7 +8,7 @@ namespace 超市收银系统之商品类
 {
     class ShanxiZao:ProductFather
     {
-        public ShanxiZao(string id,double price,double count) : base(id, price, count)
+        public ShanxiZao(string id,double price,string name) : base(id, price,name)
         {
 
         }

@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace 超市收银系统之商品类
-{
-    class YanTaiApple:ProductFather
+{/// <summary>
+/// 打折的父类
+/// </summary>
+   abstract class CalFather
     {
-        public YanTaiApple(string id,double price,string name) : base(id, price, name)
-        {
-
-        }
+        public abstract double GetTotalMoney(double RealMoney);
     }
 }
